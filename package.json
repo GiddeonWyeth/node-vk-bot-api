@@ -1,4 +1,5 @@
 {
+  "type": "commonjs",
   "name": "node-vk-bot-api",
   "version": "3.3.7",
   "description": "🤖 VK bot framework for Node.js, based on Bots Long Poll API and Callback API",

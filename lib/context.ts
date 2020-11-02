@@ -1,4 +1,10 @@
-class Context {
+import { VkBotContextInterface } from "./VkBotContextInterface";
+
+class Context implements VkBotContextInterface {
+  message?: any;
+  client_info?: any;
+  bot: any;
+
   constructor({ type, object: update }, bot) {
     if (update.message) {
       this.message = { ...update.message, type };
@@ -15,4 +21,4 @@ class Context {
   }
 }
 
-module.exports = Context;
+export default Context;

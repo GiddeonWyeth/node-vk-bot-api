@@ -2,6 +2,12 @@
 ![node-vk-bot-api](https://img.shields.io/badge/code%20style-airbnb-brightgreen.svg?style=flat-square)
 ![node-vk-bot-api](https://img.shields.io/travis/node-vk-bot-api/node-vk-bot-api.svg?branch=master&style=flat-square)
 
+# ADDED TYPESCRIPT SUPPORT
+
+# CTX CHANGES
+ add user <br/>
+ 
+
 # node-vk-bot-api
 
 🤖 VK bot framework for Node.js, based on [Bots Long Poll API](https://vk.com/dev/bots_longpoll) and [Callback API](https://vk.com/dev.php?method=callback_api).

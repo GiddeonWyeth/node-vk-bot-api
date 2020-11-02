@@ -3,6 +3,12 @@ const api = require('./api');
 const { execute } = require('./utils');
 
 class VkBot {
+  middlewares: any;
+  methods: any;
+  isStopped: any;
+  settings: any;
+  command: any;
+
   constructor(settings) {
     if (!settings) {
       throw new Error('You must pass token into settings');
@@ -25,7 +31,7 @@ class VkBot {
         : { token: settings },
     );
 
-    Object.entries({ ...methods, api }).forEach(([key, method]) => {
+    Object.entries({ ...methods, api }).forEach(([key, method]: any) => {
       this[key] = method.bind(this);
     });
 
@@ -48,4 +54,4 @@ class VkBot {
   }
 }
 
-module.exports = VkBot;
+export { VkBot };

@@ -7,7 +7,7 @@ export declare class Markup {
 
     toJSON(): string
 
-    static button(label, color?: string, payload?: { button: any }): VkMarkupButton
+    static button(label: string, color?: string, payload?: { button: any }): VkMarkupButton
 
 }
 

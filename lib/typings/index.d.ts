@@ -1,3 +1,3 @@
 export { Context } from './context'
 export { VkBot } from './bot'
-export { Markup, VkMarkupButton } from './markup'
+export { Markup } from './markup'

@@ -9,15 +9,12 @@ export declare class Markup {
 
     toJSON(): string
 
-    static button(label: string, color?: string, payload?: { button: any }): VkMarkupButton
-
-}
-
-export interface VkMarkupButton {
-    action: {
-        type: string,
-        payload: string,
-        label: string
-    },
-    color: string
+    static button(label: string, color?: string, payload?: { button: any }): {
+        action: {
+            type: string,
+            payload: string,
+            label: string
+        },
+        color: string
+    }
 }

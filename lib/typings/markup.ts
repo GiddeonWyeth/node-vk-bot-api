@@ -1,8 +1,14 @@
 export declare class Markup {
-    keyboard(buttons, options?: {columns: any}): Markup;
-    oneTime(value?): Markup
-    inline(value?): string;
+    keyboard(buttons: any, options?: { columns: any }): Markup;
+
+    oneTime(value?: boolean): Markup
+
+    inline(value?: boolean): string;
+
     toJSON(): string
-    static keyboard(keyboard, options): Markup;
-    static button(label, color?: string, payload?: {button: any}): Markup
+
+    static button(label, color?: string, payload?: { button: any }): VkMarkupButton
+
 }
+
+export declare type VkMarkupButton = { action: { type: string, payload: string, label: string }, color: string };

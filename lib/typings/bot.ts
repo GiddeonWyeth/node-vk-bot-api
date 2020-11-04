@@ -23,6 +23,7 @@ export interface VkBotKeyboard {
 
 export interface VkBotKeyboardButton {
     action: {
+        link? : string,
         type: 'text' | 'open_link',
         label: string,
         payload?: string,

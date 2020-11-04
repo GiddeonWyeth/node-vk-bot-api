@@ -27,5 +27,5 @@ export interface VkBotKeyboardButton {
         label: string,
         payload?: string,
     }
-    color: 'primary' | 'secondary' | 'negative', 'positive'
+    color: 'primary' | 'secondary' | 'negative' | 'positive'
 }

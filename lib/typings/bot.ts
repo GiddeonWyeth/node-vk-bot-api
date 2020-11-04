@@ -34,7 +34,7 @@ export interface VkBotKeyboardTextButton {
 export interface VkBotKeyboardLinkButton {
     action: {
         type: 'open_link',
-        url: string,
+        link: string,
         label: string,
         payload?: string,
     }

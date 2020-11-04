@@ -1,3 +1,3 @@
 export { Context } from './context'
-export { VkBot } from './bot'
+export { VkBot, VkBotKeyboardLinkButton, VkBotSendMessageExtra, VkBotKeyboard, VkBotKeyboardTextButton } from './bot'
 export { Markup } from './markup'

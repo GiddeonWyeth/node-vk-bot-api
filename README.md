@@ -4,9 +4,14 @@
 
 # ADDED TYPESCRIPT SUPPORT
 
-# CTX CHANGES
- add user <br/>
+# CHANGES
+ ## Add user
+ user info was added to context - ctx.user
+    
+ ## Change sendMessage and reply signature. 
+ now, take in sendMessage(userId, message, extra = {attachments, keyboard, randomId})
  
+ reply(message, extra={attachments, keyboard, randomId})
 
 # node-vk-bot-api
 

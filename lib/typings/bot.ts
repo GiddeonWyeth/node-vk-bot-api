@@ -16,7 +16,7 @@ export interface VkBotSendMessageExtra {
 }
 
 export interface VkBotKeyboard {
-    buttons: VkBotKeyboardTextButton[][] | VkBotKeyboardLinkButton,
+    buttons: VkBotKeyboardTextButton[][] | VkBotKeyboardLinkButton[][],
     inline: boolean,
     one_time: boolean,
 }

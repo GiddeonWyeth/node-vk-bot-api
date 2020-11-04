@@ -16,17 +16,26 @@ export interface VkBotSendMessageExtra {
 }
 
 export interface VkBotKeyboard {
-    buttons: VkBotKeyboardButton[][],
+    buttons: VkBotKeyboardTextButton[][] | VkBotKeyboardLinkButton,
     inline: boolean,
     one_time: boolean,
 }
 
-export interface VkBotKeyboardButton {
+export interface VkBotKeyboardTextButton {
     action: {
-        link? : string,
-        type: 'text' | 'open_link',
+        type: 'text'
         label: string,
         payload?: string,
     }
     color: 'primary' | 'secondary' | 'negative' | 'positive'
+}
+
+
+export interface VkBotKeyboardLinkButton {
+    action: {
+        type: 'open_link',
+        url: string,
+        label: string,
+        payload?: string,
+    }
 }

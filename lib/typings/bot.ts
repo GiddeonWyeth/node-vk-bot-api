@@ -6,6 +6,7 @@ export declare class VkBot {
     startPolling(callback: Function): Promise<any>;
     command(triggers: Array<string> | string, middleware: Function): void;
     sendMessage(chatId: string, message: string, extra?: VkBotSendMessageExtra): Promise<any>;
+    webhookCallback(...args: Array<unknown>): void;
 }
 
 export interface VkBotSendMessageExtra {

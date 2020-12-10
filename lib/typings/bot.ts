@@ -1,5 +1,5 @@
 export declare class VkBot {
-    constructor(token: string);
+    constructor(token: string | {token: string, confirmation: string});
     use(middleware: Function):void;
     event(triggers: any, middlewares: Array<any>): void;
     on(middlewares: Array<any>): void;

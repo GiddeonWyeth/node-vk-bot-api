@@ -1,7 +1,9 @@
+import {VkontakteContext} from "./context";
+
 export declare class VkBot {
     constructor(token: string | {token: string, confirmation: string});
     use(middleware: Function):void;
-    event(triggers: any, middlewares: Array<any>): void;
+    event(triggers: any, ...middlewares: Array<MiddlewareFunction>): void;
     on(middlewares: Array<any>): void;
     startPolling(callback: Function): Promise<any>;
     command(triggers: Array<string> | string, middleware: Function): void;
@@ -40,3 +42,5 @@ export interface VkBotKeyboardLinkButton {
         payload?: string,
     }
 }
+
+type MiddlewareFunction = (ctx: VkontakteContext) => unknown

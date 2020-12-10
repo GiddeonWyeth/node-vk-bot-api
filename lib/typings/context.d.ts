@@ -16,6 +16,15 @@ export interface VkontakteContext {
 }
 
 export interface VkontakteContextMessage {
-    ref?: string,
-    user_id: string,
+    id: number,
+    user_id: number,
+    date: number,
+    out: number,
+    read_state: number,
+    title: string,
+    body: string,
+    owner_ids: Array<unknown>,
+    type: MessageType
 }
+
+type MessageType = 'message_new'

@@ -7,7 +7,7 @@ export declare class VkBot {
     on(middlewares: Array<any>): void;
     startPolling(callback: Function): Promise<any>;
     command(triggers: Array<string> | string, middleware: Function): void;
-    sendMessage(chatId: string, message: string, extra?: VkBotSendMessageExtra): Promise<any>;
+    sendMessage(chatId: number, message: string, extra?: VkBotSendMessageExtra): Promise<any>;
     webhookCallback(...args: Array<unknown>): void;
 }
 
